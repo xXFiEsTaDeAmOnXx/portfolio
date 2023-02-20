@@ -41,7 +41,7 @@ export default defineComponent({
               >Niklas Kleiser.</span
             >
           </p>
-          <p>I am a student a Ravensburg Weingarten University in Germany.</p>
+          <p>I am a student at Ravensburg Weingarten University in Germany.</p>
           <p>In my free time, I like coding.</p>
         </div>
         <div
