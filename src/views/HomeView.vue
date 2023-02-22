@@ -1,5 +1,6 @@
 <script lang="ts">
 import Section from ".././components/Section.vue";
+import VueScrollTo from "vue-scrollto";
 import { defineComponent } from "vue";
 
 export default defineComponent({
@@ -13,7 +14,7 @@ export default defineComponent({
   },
   methods: {
     scrollDown() {
-      this.$scrollTo("#AboutMe", 500, {
+      VueScrollTo.scrollTo("#AboutMe", 500, {
         easing: "ease-in-out",
         offset: -100,
       });
@@ -21,7 +22,7 @@ export default defineComponent({
   },
   updated() {
     if (this.$route.hash) {
-      this.$scrollTo(this.$route.hash, 500, {
+      VueScrollTo.scrollTo(this.$route.hash, 500, {
         easing: "ease-in-out",
         offset: -100,
       });
